@@ -7,7 +7,7 @@ import { Link } from 'wouter';
 import { 
   ClipboardCheck, Camera, GraduationCap, Wrench, Users, AlertCircle, ArrowRight, 
   CheckCircle2, Home, Droplets, PaintBucket, Hammer, Shield, Wind, Zap, ThermometerSun,
-  TreeDeciduous, DoorOpen, Building2
+  DoorOpen, Building2
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -181,20 +181,7 @@ export default function Services() {
         ? 'Attic insulation, wall insulation, and energy efficiency upgrades'
         : 'Aislamiento de ático, aislamiento de paredes y mejoras de eficiencia energética'
     },
-    {
-      icon: TreeDeciduous,
-      title: language === 'en' ? 'Landscaping & Fencing' : 'Paisajismo y Cercas',
-      description: language === 'en'
-        ? 'Fence installation, tree services, and landscape improvements'
-        : 'Instalación de cercas, servicios de árboles y mejoras de paisajismo'
-    },
-    {
-      icon: Droplets,
-      title: language === 'en' ? 'Plumbing' : 'Plomería',
-      description: language === 'en'
-        ? 'Pipe repair, fixture installation, and water heater services'
-        : 'Reparación de tuberías, instalación de accesorios y servicios de calentadores de agua'
-    }
+    
   ];
 
   return (
