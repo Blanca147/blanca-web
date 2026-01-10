@@ -45,8 +45,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: t('contact.info.email'),
-      value: 'blanca@propertyservices.com',
-      href: 'mailto:blanca@propertyservices.com',
+      value: 'info@blancaproservices.com',
+      href: 'mailto:info@blancaproservices.com',
       color: 'from-emerald-500 to-teal-500'
     },
     {
@@ -61,7 +61,8 @@ export default function Contact() {
       label: t('contact.info.hours'),
       value: t('contact.info.hours.value'),
       href: null,
-      color: 'from-orange-500 to-amber-500'
+      color: 'from-orange-500 to-amber-500',
+      multiline: true
     }
   ];
 
@@ -113,7 +114,9 @@ export default function Contact() {
                         {item.value}
                       </a>
                     ) : (
-                      <p className="text-muted-foreground">{item.value}</p>
+                      <p className={`text-muted-foreground ${item.multiline ? 'whitespace-pre-line' : ''}`}>
+                        {item.value}
+                      </p>
                     )}
                   </CardContent>
                 </Card>

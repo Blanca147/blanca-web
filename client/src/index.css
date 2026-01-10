@@ -50,10 +50,10 @@
 }
 
 :root {
-  /* Vibrant teal/emerald primary with warm coral accent */
-  --primary: oklch(0.55 0.18 175);
+  /* Deeper teal/emerald primary with warm coral accent */
+  --primary: oklch(0.50 0.18 175);
   --primary-foreground: oklch(0.98 0.01 175);
-  --sidebar-primary: oklch(0.50 0.16 175);
+  --sidebar-primary: oklch(0.46 0.16 175);
   --sidebar-primary-foreground: oklch(0.98 0.01 175);
   
   /* Warm coral accent */
@@ -84,13 +84,13 @@
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.90 0.02 200);
   --input: oklch(0.92 0.01 200);
-  --ring: oklch(0.55 0.18 175);
+  --ring: oklch(0.50 0.18 175);
   --sidebar: oklch(0.98 0.005 175);
   --sidebar-foreground: oklch(0.18 0.02 250);
   --sidebar-accent: oklch(0.94 0.02 175);
   --sidebar-accent-foreground: oklch(0.18 0.02 250);
   --sidebar-border: oklch(0.90 0.02 200);
-  --sidebar-ring: oklch(0.55 0.18 175);
+  --sidebar-ring: oklch(0.50 0.18 175);
   
   /* Font families */
   --font-display: 'Playfair Display', serif;
@@ -187,7 +187,7 @@
   
   /* Gradient text effect */
   .gradient-text {
-    background: linear-gradient(135deg, oklch(0.55 0.18 175), oklch(0.65 0.20 200), oklch(0.70 0.15 25));
+    background: linear-gradient(135deg, oklch(0.50 0.18 175), oklch(0.56 0.16 195), oklch(0.70 0.15 25));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -195,7 +195,7 @@
   
   /* Gradient backgrounds */
   .gradient-primary {
-    background: linear-gradient(135deg, oklch(0.55 0.18 175), oklch(0.50 0.16 200));
+    background: linear-gradient(135deg, oklch(0.50 0.18 175), oklch(0.46 0.16 195));
   }
   
   .gradient-accent {

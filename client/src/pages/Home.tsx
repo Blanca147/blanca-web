@@ -156,7 +156,7 @@ export default function Home() {
                 {/* Main image */}
                 <div className="rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="/images/hero-home.jpg"
+                    src="/images/b.jpeg"
                     alt="Blanca Garza - Professional Property Services"
                     className="w-full h-auto object-cover"
                   />
@@ -164,15 +164,15 @@ export default function Home() {
 
                 {/* Floating card 1 */}
                 <motion.div
-                  className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3"
+                  className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4"
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center">
-                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                  <div className="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center">
+                    <CheckCircle2 className="w-7 h-7 text-green-600" />
                   </div>
                   <div>
-                    <p className="font-bold text-foreground">{t('home.hero.card1.title')}</p>
+                    <p className="text-base font-bold text-foreground">{t('home.hero.card1.title')}</p>
                     <p className="text-sm text-muted-foreground">{t('home.hero.card1.subtitle')}</p>
                   </div>
                 </motion.div>

@@ -139,7 +139,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a 
-                    href="mailto:blanca@propertyservices.com" 
+                    href="mailto:info@blancaproservices.com" 
                     className="flex items-center gap-3 text-white/70 hover:text-white transition-colors group"
                   >
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">

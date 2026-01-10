@@ -6,8 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'wouter';
 import { 
   ClipboardCheck, Camera, GraduationCap, Wrench, Users, AlertCircle, ArrowRight, 
-  CheckCircle2, Home, Droplets, PaintBucket, Hammer, Shield, Wind, Zap, ThermometerSun,
-  DoorOpen, Building2
+  CheckCircle2, Home, Droplets, PaintBucket, Hammer, Shield, Zap, Sun, Building2
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -140,32 +139,11 @@ export default function Services() {
         : 'Servicios profesionales de pintura para todas las superficies'
     },
     {
-      icon: DoorOpen,
-      title: language === 'en' ? 'Windows & Doors' : 'Ventanas y Puertas',
-      description: language === 'en'
-        ? 'Window replacement, door installation, and weatherproofing'
-        : 'Reemplazo de ventanas, instalación de puertas e impermeabilización'
-    },
-    {
       icon: Hammer,
       title: language === 'en' ? 'General Repairs' : 'Reparaciones Generales',
       description: language === 'en'
         ? 'Drywall repair, carpentry, and structural fixes'
         : 'Reparación de paneles de yeso, carpintería y arreglos estructurales'
-    },
-    {
-      icon: Shield,
-      title: language === 'en' ? 'Foundation & Waterproofing' : 'Cimientos e Impermeabilización',
-      description: language === 'en'
-        ? 'Foundation repair, basement waterproofing, and drainage solutions'
-        : 'Reparación de cimientos, impermeabilización de sótanos y soluciones de drenaje'
-    },
-    {
-      icon: Wind,
-      title: language === 'en' ? 'HVAC Services' : 'Servicios de HVAC',
-      description: language === 'en'
-        ? 'Heating, ventilation, and air conditioning installation and repair'
-        : 'Instalación y reparación de calefacción, ventilación y aire acondicionado'
     },
     {
       icon: Zap,
@@ -175,11 +153,11 @@ export default function Services() {
         : 'Reparaciones eléctricas, actualizaciones de paneles e inspecciones de seguridad'
     },
     {
-      icon: ThermometerSun,
-      title: language === 'en' ? 'Insulation' : 'Aislamiento',
+      icon: Sun,
+      title: language === 'en' ? 'Solar Panel Removal' : 'Retiro de Paneles Solares',
       description: language === 'en'
-        ? 'Attic insulation, wall insulation, and energy efficiency upgrades'
-        : 'Aislamiento de ático, aislamiento de paredes y mejoras de eficiencia energética'
+        ? 'Safe removal of solar panels and roof preparation'
+        : 'Retiro seguro de paneles solares y preparacion del techo'
     },
     
   ];

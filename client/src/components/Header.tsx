@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Home } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
@@ -54,7 +54,7 @@ export default function Header() {
               transition={{ type: 'spring', stiffness: 400 }}
             >
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                <span className="text-white font-bold text-xl">BG</span>
+                <Home className="w-7 h-7 text-white" />
               </div>
               <div className="hidden sm:block">
                 <span className="font-bold text-lg text-foreground">Blanca Garza</span>
