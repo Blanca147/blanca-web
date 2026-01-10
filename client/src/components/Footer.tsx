@@ -145,7 +145,7 @@ export default function Footer() {
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Mail className="w-5 h-5" />
                     </div>
-                    <span>blanca@propertyservices.com</span>
+                    <span>info@blancaproservices.com</span>
                   </a>
                 </li>
                 <li className="flex items-center gap-3 text-white/70">
@@ -158,7 +158,7 @@ export default function Footer() {
                   <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
                     <Clock className="w-5 h-5" />
                   </div>
-                  <span>Mon - Fri: 8AM - 6PM</span>
+                  <span>Mon - Sat: 8AM - 6PM</span>
                 </li>
               </ul>
             </motion.div>
