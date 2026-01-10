@@ -18,6 +18,11 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
+  // Lightweight cron/health endpoint to keep the service awake.
+  app.get("/cron", (_req, res) => {
+    res.type("text/plain").send("ok");
+  });
+
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
