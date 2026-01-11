@@ -31,7 +31,15 @@ export default function Gallery() {
         : 'Esta renovación exterior completa mejoró drásticamente el atractivo exterior y el valor general de mercado. Además de una actualización completa de pintura, lavamos la casa a presión, reparamos molduras de madera dañadas y restauramos detalles exteriores clave. La propiedad ya estaba en venta, pero después de nuestro trabajo, su apariencia y valor percibido aumentaron, ayudando a que se vendiera rápidamente con clientes muy satisfechos.',
       image: '/images/gallery/exterior-paint-collage.jpg',
       category: language === 'en' ? 'Exterior' : 'Exterior',
-      location: 'Aurora, IL'
+      location: 'Aurora, IL',
+      subProject: {
+        title: language === 'en' ? 'Garage Door Paint Upgrade' : 'Mejora de Pintura de Puerta de Garaje',
+        description: language === 'en'
+          ? 'Focused curb appeal upgrade with a high-contrast garage door finish for a more premium, updated look.'
+          : 'Mejora enfocada en el atractivo exterior con un acabado de alto contraste para una apariencia más premium y actualizada.',
+        beforeImage: '/images/gallery/garage-door-before.jpg',
+        afterImage: '/images/gallery/garage-door-after.jpg'
+      }
     },
     {
       id: 3,
@@ -155,6 +163,20 @@ export default function Gallery() {
                             />
                           </div>
                         )}
+                        {project.subProject && (
+                          <div className="mt-8">
+                            <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground mb-2">
+                              <span>{language === 'en' ? 'Before' : 'Antes'}</span>
+                              <span>{language === 'en' ? 'After' : 'Después'}</span>
+                            </div>
+                            <BeforeAfterSlider
+                              beforeImage={project.subProject.beforeImage}
+                              afterImage={project.subProject.afterImage}
+                              beforeLabel={language === 'en' ? 'Before' : 'Antes'}
+                              afterLabel={language === 'en' ? 'After' : 'Después'}
+                            />
+                          </div>
+                        )}
                       </div>
 
                       {/* Project Info */}
@@ -175,6 +197,16 @@ export default function Gallery() {
                         <p className="text-muted-foreground leading-relaxed mb-6">
                           {project.description}
                         </p>
+                        {project.subProject && (
+                          <div className="mb-6">
+                            <h3 className="text-lg font-semibold text-foreground mb-2">
+                              {project.subProject.title}
+                            </h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              {project.subProject.description}
+                            </p>
+                          </div>
+                        )}
 
                         <div className="flex items-center gap-2 text-green-600">
                           <CheckCircle2 className="w-5 h-5" />

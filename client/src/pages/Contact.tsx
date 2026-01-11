@@ -38,8 +38,8 @@ export default function Contact() {
     {
       icon: Phone,
       label: t('contact.info.phone'),
-      value: '(331) 220-17824',
-      href: 'tel:+133122017824',
+      value: '331-220-1724',
+      href: 'tel:+13312201724',
       color: 'from-blue-500 to-cyan-500'
     },
     {

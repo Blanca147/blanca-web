@@ -128,13 +128,13 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <a 
-                    href="tel:+133122017824" 
+                    href="tel:+13312201724" 
                     className="flex items-center gap-3 text-white/70 hover:text-white transition-colors group"
                   >
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Phone className="w-5 h-5" />
                     </div>
-                    <span>(331) 220-17824</span>
+                    <span>331-220-1724</span>
                   </a>
                 </li>
                 <li>
