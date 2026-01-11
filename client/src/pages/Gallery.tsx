@@ -25,6 +25,16 @@ export default function Gallery() {
     },
     {
       id: 2,
+      title: language === 'en' ? 'Exterior Paint Transformation' : 'Transformación de Pintura Exterior',
+      description: language === 'en'
+        ? 'This full exterior refresh dramatically improved curb appeal and overall market value. In addition to a complete paint upgrade, we power-washed the home, repaired damaged wood trim, and restored key exterior details. The property was already listed, but after our work, its appearance and perceived value increased — helping it sell quickly with extremely happy clients.'
+        : 'Esta renovación exterior completa mejoró drásticamente el atractivo exterior y el valor general de mercado. Además de una actualización completa de pintura, lavamos la casa a presión, reparamos molduras de madera dañadas y restauramos detalles exteriores clave. La propiedad ya estaba en venta, pero después de nuestro trabajo, su apariencia y valor percibido aumentaron, ayudando a que se vendiera rápidamente con clientes muy satisfechos.',
+      image: '/images/gallery/exterior-paint-collage.jpg',
+      category: language === 'en' ? 'Exterior' : 'Exterior',
+      location: 'Aurora, IL'
+    },
+    {
+      id: 3,
       title: language === 'en' ? 'Siding Replacement' : 'Reemplazo de Revestimiento',
       description: language === 'en'
         ? 'Thorough documentation of deteriorated siding panels and water damage, enabling homeowner to make informed decisions about repairs.'
@@ -35,7 +45,7 @@ export default function Gallery() {
       location: 'Aurora, IL'
     },
     {
-      id: 3,
+      id: 4,
       title: language === 'en' ? 'Water Damage Repair' : 'Reparación de Daños por Agua',
       description: language === 'en'
         ? 'Interior ceiling inspection revealing water infiltration damage. Detailed photo documentation helped identify the source and extent of damage.'
@@ -125,12 +135,26 @@ export default function Gallery() {
                     <div className={`grid grid-cols-1 lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                       {/* Image Comparison */}
                       <div className={`p-6 md:p-8 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                        <BeforeAfterSlider
-                          beforeImage={project.beforeImage}
-                          afterImage={project.afterImage}
-                          beforeLabel={language === 'en' ? 'Before' : 'Antes'}
-                          afterLabel={language === 'en' ? 'After' : 'Después'}
-                        />
+                        {project.afterImage ? (
+                          <BeforeAfterSlider
+                            beforeImage={project.beforeImage}
+                            afterImage={project.afterImage}
+                            beforeLabel={language === 'en' ? 'Before' : 'Antes'}
+                            afterLabel={language === 'en' ? 'After' : 'Después'}
+                          />
+                        ) : (
+                          <div>
+                            <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground mb-2">
+                              <span>{language === 'en' ? 'Before' : 'Antes'}</span>
+                              <span>{language === 'en' ? 'After' : 'Después'}</span>
+                            </div>
+                            <img
+                              src={project.image}
+                              alt={project.title}
+                              className="w-full h-auto rounded-2xl shadow-lg"
+                            />
+                          </div>
+                        )}
                       </div>
 
                       {/* Project Info */}

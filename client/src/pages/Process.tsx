@@ -44,7 +44,7 @@ export default function Process() {
       number: '05',
       title: t('process.step5.title'),
       description: t('process.step5.desc'),
-      color: 'from-pink-500 to-rose-500'
+      color: 'from-orange-500 to-amber-500'
     }
   ];
 

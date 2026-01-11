@@ -110,7 +110,7 @@ export default function Contact() {
                     </div>
                     <h3 className="font-semibold text-foreground mb-1">{item.label}</h3>
                     {item.href ? (
-                      <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors">
+                      <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors inline-block text-center w-full">
                         {item.value}
                       </a>
                     ) : (

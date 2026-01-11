@@ -50,20 +50,20 @@
 }
 
 :root {
-  /* Deeper teal/emerald primary with warm coral accent */
+  /* Deeper teal/emerald primary with construction orange accent */
   --primary: oklch(0.50 0.18 175);
   --primary-foreground: oklch(0.98 0.01 175);
   --sidebar-primary: oklch(0.46 0.16 175);
   --sidebar-primary-foreground: oklch(0.98 0.01 175);
   
-  /* Warm coral accent */
-  --accent: oklch(0.70 0.15 25);
-  --accent-foreground: oklch(0.20 0.02 25);
+  /* Construction orange accent */
+  --accent: oklch(0.70 0.16 45);
+  --accent-foreground: oklch(0.20 0.02 45);
   
   /* Chart colors - vibrant spectrum */
   --chart-1: oklch(0.65 0.20 175);
   --chart-2: oklch(0.60 0.18 200);
-  --chart-3: oklch(0.70 0.15 25);
+  --chart-3: oklch(0.70 0.16 45);
   --chart-4: oklch(0.65 0.12 85);
   --chart-5: oklch(0.55 0.15 280);
   
@@ -112,8 +112,8 @@
   --secondary-foreground: oklch(0.85 0.02 175);
   --muted: oklch(0.22 0.02 250);
   --muted-foreground: oklch(0.65 0.02 200);
-  --accent: oklch(0.25 0.03 25);
-  --accent-foreground: oklch(0.90 0.02 25);
+  --accent: oklch(0.30 0.05 45);
+  --accent-foreground: oklch(0.92 0.02 45);
   --destructive: oklch(0.65 0.20 25);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.25 0.02 250);
@@ -187,7 +187,7 @@
   
   /* Gradient text effect */
   .gradient-text {
-    background: linear-gradient(135deg, oklch(0.50 0.18 175), oklch(0.56 0.16 195), oklch(0.70 0.15 25));
+    background: linear-gradient(135deg, oklch(0.45 0.20 160), oklch(0.48 0.18 165), oklch(0.52 0.16 170));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -199,7 +199,7 @@
   }
   
   .gradient-accent {
-    background: linear-gradient(135deg, oklch(0.70 0.15 25), oklch(0.65 0.18 40));
+    background: linear-gradient(135deg, oklch(0.70 0.16 45), oklch(0.62 0.16 55));
   }
   
   .gradient-hero {

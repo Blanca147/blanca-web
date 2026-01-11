@@ -53,8 +53,8 @@ export default function Header() {
               whileHover={{ scale: 1.02 }}
               transition={{ type: 'spring', stiffness: 400 }}
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                <Home className="w-7 h-7 text-white" />
+              <div className="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center shadow-lg ring-1 ring-black/5 group-hover:shadow-xl transition-shadow">
+                <Home className="w-6 h-6" />
               </div>
               <div className="hidden sm:block">
                 <span className="font-bold text-lg text-foreground">Blanca Garza</span>
